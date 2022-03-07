@@ -1,0 +1,23 @@
+{
+	"powers": [
+	    "origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"tera:extract",
+	    "tera:stone_create",
+        "tera:stoney_skin",
+		"tera:earthglide",
+        "tera:respiration",
+        "tera:sink",
+		"tera:no_food",
+        "tera:eat_ores",
+        "tera:claustrophile",
+		"tera:foodiron",
+		"tera:foodgold",
+		"tera:foodcopper"
+	],
+	"icon": "minecraft:raw_iron_block",
+	"order": 24,
+    "impact": 3,
+	"name": "Xornen",
+	"description": "You are one with the earth, living amongst the caves and darkness."
+}

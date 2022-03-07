@@ -1,0 +1,55 @@
+{
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "type": "origins:active_self",
+    "cooldown": 2,
+    "hud_render": {
+      "should_render": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:raw_iron"
+            }
+          }
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:delay",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "clear @s raw_iron 1"
+          },
+          "ticks": 2
+        },
+        {
+          "type": "origins:delay",
+          "action": {
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 1.4
+          },
+          "ticks": 2
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1"
+        }
+      ]
+    },
+    "hidden": true,
+	"name": "Ore Cruncher",
+	"description": "You need to eat ores to survive, as it gives the most nutrition."
+  }

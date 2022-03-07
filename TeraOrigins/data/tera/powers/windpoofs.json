@@ -1,0 +1,6 @@
+{
+    "type": "origins:particle",
+    "frequency": 20,
+    "particle": "minecraft:poof",
+    "hidden": true
+}
