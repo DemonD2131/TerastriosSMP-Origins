@@ -1,6 +1,6 @@
 {   
 	"name": "Triple Shot",
-    "description": "You shoot additional arrows while sneaking.",{
+    "description": "You shoot additional arrows while sneaking.",
 	"type": "origins:multiple",
 	"shoot": {
 		"type": "origins:fire_projectile",
