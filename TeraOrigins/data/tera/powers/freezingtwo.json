@@ -16,7 +16,7 @@
                     "minecraft:snowy_taiga_mountains",
                     "minecraft:snowy_taiga",
                     "minecraft:ice_spikes",
-                    "minecraft:snowy_tundra"
+                    "minecraft:snowy_tundra",
 					"terralith:birch_taiga",
 					"terralith:cold_shrubland",
 					"terralith:frozen_cliffs",
@@ -103,6 +103,6 @@
             "show_particles": true,
             "show_icon": true,
             "effect": "minecraft:slowness"
-        },
+        }
     ]
 }

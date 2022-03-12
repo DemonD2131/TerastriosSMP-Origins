@@ -27,6 +27,6 @@
 	},
 	"interval": 40,
 	"name": "Regrowth",
-	"description": "You slowly regerate your mass overtime"
+	"description": "You slowly regerate your mass overtime",
 	"hidden": true
 }
