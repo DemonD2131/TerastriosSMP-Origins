@@ -1,2 +1,0 @@
-execute at @e[tag=hel] run summon minecraft:snowball ~ ~2.3 ~ {Tags:["at"],Invisible:1}
-execute as @e[type=minecraft:snowball,tag=at] run data modify entity @s Owner set from entity @e[tag=ens,limit=1] UUID

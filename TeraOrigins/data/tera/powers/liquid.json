@@ -1,0 +1,90 @@
+{
+	"name": "Liquid",
+	"description": "You can fit through fence gates.",
+	"type": "origins:multiple",
+	"toggle": {
+		"type": "origins:toggle",
+		"active_by_default": true,
+		"key": {
+			"key": "key.sneak"
+		}
+	},
+	"phase": {
+		"type": "origins:phasing",
+		"render_type": "blindness",
+		"view_distance": 25,
+		"block_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:base_stone_overworld"
+				},
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:base_stone_nether"
+				}
+			]
+		},
+		"phase_down_condition": {
+			"type": "origins:sneaking"
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "tera:liquid_toggle"
+		} 
+	},
+	"swim": {
+		"type": "origins:swimming",
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:in_tag",
+						"tag": "minecraft:fences"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "minecraft:fence_gates"
+					},
+					{
+						"type": "origins:in_tag",
+						"tag": "minecraft:fence_gates"
+					},
+				]
+			}
+		}
+	},
+	"fall": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		}
+	},
+	"sufficate": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "inWall"
+		}
+	},
+	"effect": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/block/bone_block_top.png",
+		"strength": 0.7,
+		"red": 0.1,
+		"green": 0.1,
+		"blue": 0.1,
+		"draw_mode": "texture",
+		"draw_phase": "below_hud",
+		"hide_with_hud": false,
+		"visible_in_third_person": false,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "tera:liquid_toggle"
+		}
+	}
+}

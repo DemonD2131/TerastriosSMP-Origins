@@ -1,0 +1,109 @@
+{
+    "type": "origins:damage_over_time",
+    "hidden": false,
+    "name": "Freezing",
+    "description": "As you are made of water if you get to cold you will freeze solid unless you keep yourself warm",
+    "interval": 30,
+    "damage": 1,
+    "protection_effectiveness": 0,
+    "onset_delay": 600,
+    "damage_easy": 1,
+    "damage_source": {
+        "bypasses_armor": true,
+        "fire": false,
+        "unblockable": true,
+        "magic": false,
+        "out_of_world": false,
+        "name": "freeze"
+    },
+    "condition": {
+        "type": "origins:and",
+        "inverted": false,
+        "conditions": [
+            {
+                "type": "origins:biome",
+                "inverted": false,
+                "biomes": [
+                    "minecraft:snowy_beach",
+                    "minecraft:frozen_river",
+                    "minecraft:snowy_taiga_mountains",
+                    "minecraft:snowy_taiga",
+                    "minecraft:ice_spikes",
+                    "minecraft:snowy_tundra",
+					"terralith:birch_taiga",
+					"terralith:cold_shrubland",
+					"terralith:frozen_cliffs",
+					"terralith:glacial_chasm",
+					"terralith:ice_marsh",
+					"terralith:siberian_grove",
+					"terralith:siberian_taiga",
+					"terralith:skylands_winter",
+					"terralith:snowy_badlands",
+					"terralith:snowy_maple_forest",
+					"terralith:snowy_shield",
+					"terralith:wintry_forest"
+                ]
+            },
+            {
+                "type": "origins:or",
+                "inverted": true,
+                "conditions": [
+                    {
+                        "type": "origins:on_fire",
+                        "inverted": false
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "inverted": false,
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:or",
+                            "inverted": false,
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "inverted": false,
+                                    "ingredient": {
+                                        "item": "minecraft:lava_bucket"
+                                    }
+                                },
+                                {
+                                    "type": "origins:ingredient",
+                                    "inverted": false,
+                                    "ingredient": {
+                                        "item": "minecraft:torch"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "inverted": false,
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:or",
+                            "inverted": false,
+                            "conditions": [
+                                {
+                                    "type": "origins:ingredient",
+                                    "inverted": false,
+                                    "ingredient": {
+                                        "item": "minecraft:lava_bucket"
+                                    }
+                                },
+                                {
+                                    "type": "origins:ingredient",
+                                    "inverted": false,
+                                    "ingredient": {
+                                        "item": "minecraft:torch"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

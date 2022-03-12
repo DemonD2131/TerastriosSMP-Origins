@@ -2,6 +2,11 @@
   "replace": false,
   "origins": [
     "tera:xornen",
+    "tera:quesian",
+    "tera:ebongnaut",
+    "tera:oozlian",
+    "tera:pyrezyte",
+    "tera:rimelin",
 	  "tera:aerser"
   ]
 }
