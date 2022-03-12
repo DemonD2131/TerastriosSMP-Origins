@@ -12,6 +12,10 @@
             {
                 "type": "origins:name",
                 "name": "explosion.player"
+            },
+            {
+                "type": "origins:name",
+                "name": "badRespawnPoint"
             }
         ]
     },
