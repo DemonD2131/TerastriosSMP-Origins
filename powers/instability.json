@@ -1,0 +1,23 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+		    	"type": "origins:execute_command",
+		    	"command": "summon tnt ~ ~1 ~ {Fuse:0}"
+            }
+        ]
+    },
+    "cooldown": 3600,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 2
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    },
+    "name": "Instability",
+    "description": "Your latent energy convulses and combines to form an explosion"
+}

@@ -1,0 +1,80 @@
+{
+	"type": "origins:multiple",
+	"change_resource": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:on_block",
+						"block_condition": {
+							"type": "origins:in_tag",
+							"tag": "minecraft:snow"
+						}
+					},
+					{
+						"type": "origins:on_block",
+						"block_condition": {
+							"type": "origins:in_tag",
+							"tag": "minecraft:ice"
+						}
+					},
+					{
+						"type": "origins:in_block_anywhere",
+						"block_condition": {
+							"type": "origins:block",
+							"block": "minecraft:snow"
+						},
+						"comparison": ">=",
+						"compare_to": 1
+					},
+					{
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:on_block",
+								"inverted": true
+							},
+							{
+								"type": "origins:resource",
+								"resource": "tera:snowy_sprinter_resource",
+								"comparison": "==",
+								"compare_to": 1
+							}
+						]
+					}
+				]
+			},
+			"if_action": {
+				"type": "origins:execute_command",
+				"command": "/resource set @s tera:snowy_sprinter_resource 1",
+				"permission_level": 4
+			},
+			"else_action": {
+				"type": "origins:execute_command",
+				"command": "/resource set @s tera:snowy_sprinter_resource 0",
+				"permission_level": 4
+			}
+		}
+	},
+	"add_speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.6
+		},
+		"tick_rate": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "tera:snowy_sprinter_resource",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"name": "Snowy sprinter",
+	"description": "When on snow and ice, you are able to run very fast."
+}

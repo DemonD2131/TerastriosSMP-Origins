@@ -1,0 +1,1 @@
+summon polar_bear ~ ~ ~ {Passengers:[{Tags:["smn","hel"],Silent:1,id:stray,PersistenceRequired:1,CanPickUpLoot:1b,HandItems:[{Count:1,id:iron_axe,tag:{Enchantments:[{id:sharpness,lvl:3}]}},{}],ArmorItems:[{},{},{},{Count:1,id:leather_helmet}],HandDropChances:[0.1f,0.0f]}],Tags:["smn","hel"],Silent:1}

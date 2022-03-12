@@ -1,0 +1,32 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:if_else",
+    	"condition": {
+			"type": "origins:fluid_height",
+			"fluid": "minecraft:water",
+			"comparison": ">=",
+			"compare_to": 0.5
+		},
+		"if_action": {
+			"type": "origins:change_resource",
+			"resource": "slimy:massbar",
+			"change": 3
+		},
+		"else_action": {
+			"type": "origins:change_resource",
+			"resource": "slimy:massbar",
+			"change": 1
+		}
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "slimy:iframe",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"interval": 40,
+	"name": "Regrowth",
+	"description": "You slowly regerate your mass overtime"
+	"hidden": true
+}

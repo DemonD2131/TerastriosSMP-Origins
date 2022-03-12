@@ -1,0 +1,27 @@
+{
+    "name": "Ore Cruncher",
+    "description": "You eat ores instead of the soft food like everyone else. Ores taste the best and provide the most nutrtition for you.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:golden_apple"
+                }
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:enchanted_golden_apple"
+                }
+            }
+        ]
+    }
+}

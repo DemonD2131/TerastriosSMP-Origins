@@ -1,0 +1,26 @@
+{
+	"type": "origins:active_self",
+	"name": "Extraction",
+	"description": "You can turn some of your mass into slimeblocks (primary ability key)",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "minecraft:slime_block"
+				}
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": true
+	},
+	"cooldown": 80,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 21
+	}
+}

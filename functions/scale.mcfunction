@@ -1,0 +1,1 @@
+execute store result score @s height run scale get pehkui:height @s 1000

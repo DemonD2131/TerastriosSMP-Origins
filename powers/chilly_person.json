@@ -1,0 +1,9 @@
+{
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "freeze"
+	},
+	"name": "Chilly person",
+	"description": "If you're inside the powder snow block, you don't take freezing damage. Also, you are faster in this block than others and can climb it up. Using any piece of leather armor increases speed."
+}

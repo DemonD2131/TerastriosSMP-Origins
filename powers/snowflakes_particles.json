@@ -1,0 +1,7 @@
+{
+	"type": "origins:particle",
+	"particle": "minecraft:snowflake",
+	"frequency": 4,
+	"name": "Snowflakes",
+	"description": "Your body emits snowflakes."
+}

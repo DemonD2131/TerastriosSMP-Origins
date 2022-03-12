@@ -1,0 +1,14 @@
+{
+	"name": "High Altitude",
+	"description": "You are used to thinner, fresher air. You can only sleep above y100.",
+	"type": "origins:prevent_sleep",
+    "message": "You need to be above y100 to sleep.",
+    "condition": {
+		"type": "origins:in_block",
+		"block_condition": {
+			"type": "origins:height",
+			"comparison": "<",
+			"compare_to": 150
+		}
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"type": "origins:modify_harvest",
+	"block_condition": {
+		"type": "origins:block",
+		"block": "minecraft:snow"
+	},
+	"allow": true,
+	"name": "Snow harvester",
+	"description": "You're able to collect snow and ice with your bare hands. You can craft a powder snow bucket using 3 snowballs and a bucket."
+}
