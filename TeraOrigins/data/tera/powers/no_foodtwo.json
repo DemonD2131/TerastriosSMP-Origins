@@ -1,0 +1,27 @@
+{
+    "name": "Mycelian Metabolism",
+    "description": "You eat from the sun and nothing else, you do still benefit from golden apples however.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:food"
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:golden_apple"
+                }
+            },
+            {
+                "inverted": true,
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:enchanted_golden_apple"
+                }
+            }
+        ]
+    }
+}

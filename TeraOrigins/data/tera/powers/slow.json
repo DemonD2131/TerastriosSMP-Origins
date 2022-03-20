@@ -1,10 +1,6 @@
 {
 	"name": "Obsidian Skin",
 	"description": "Because of your obsidian skin you are much slower than other origins.",
-
-	"type": "origins:apply_effect",
-
-	},
 	"slow": {
 		"type": "origins:stacking_status_effect",
 		"min_stacks": 0,
@@ -16,7 +12,7 @@
 				"is_ambient": true,
 				"show_particles": false,
 				"show_icon": false,
-				"amplifier": 0
+				"amplifier": 1
 			}
 		]
 	}

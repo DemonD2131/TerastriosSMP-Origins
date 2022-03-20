@@ -38,8 +38,8 @@
           "type": "origins:delay",
           "action": {
             "type": "origins:feed",
-            "food": 1,
-            "saturation": 1.4
+            "food": 2,
+            "saturation": 1
           },
           "ticks": 2
         },

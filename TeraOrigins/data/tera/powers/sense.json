@@ -1,0 +1,8 @@
+{
+	"type": "origins:entity_glow",
+	"name": "Energy Sense",
+	"description": "(Sneaking)-You can sense the energy fields around the creatures near you while concentrating, alerting you to their locations.",
+	"condition": {
+		"type": "origins:sneaking"
+	}
+}

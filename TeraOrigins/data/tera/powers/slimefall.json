@@ -9,7 +9,7 @@
         "condition": {
             "type": "origins:fall_distance",
             "comparison": "<",
-            "compare_to": 45
+            "compare_to": 55
         }
     },
     "name": "Cushioned Impact",

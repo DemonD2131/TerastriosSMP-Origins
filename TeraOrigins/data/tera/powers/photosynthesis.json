@@ -1,0 +1,25 @@
+{
+  "type": "origins:multiple",
+  "regenerate_food": {
+	"type": "origins:action_over_time",
+	"interval": 60,
+	"entity_action": {
+	  "type": "origins:feed",
+	  "food": 1,
+	  "saturation": 1
+	},
+	"condition": {
+	  "type": "origins:and",
+	  "conditions": [
+		{
+		  "type": "origins:daytime"
+		},
+		{
+		  "type": "origins:exposed_to_sky"
+		}
+	  ]
+	}
+  },
+  "name": "Photosynthesis",
+  "description": "Being part plant, you get your energy from the sun. However, this is the only way you can eat."
+}

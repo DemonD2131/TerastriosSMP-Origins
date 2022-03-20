@@ -1,0 +1,14 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:poison",
+        "minecraft:wither",
+        "minecraft:mining_fatigue",
+        "minecraft:slowness",
+        "minecraft:weakness",
+        "minecraft:nausea",
+        "minecraft:hunger"
+    ],
+	"name": "Lack of Blood",
+	"description":"You are immune to; poison, wither, slowness, weakness, mining fatigue, nausea and hunger."
+}

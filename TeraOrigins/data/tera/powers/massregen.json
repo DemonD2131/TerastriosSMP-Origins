@@ -10,23 +10,22 @@
 		},
 		"if_action": {
 			"type": "origins:change_resource",
-			"resource": "slimy:massbar",
-			"change": 3
+			"resource": "tera:massbar",
+			"change": 5
 		},
 		"else_action": {
 			"type": "origins:change_resource",
-			"resource": "slimy:massbar",
+			"resource": "tera:massbar",
 			"change": 1
 		}
 	},
 	"condition": {
 		"type": "origins:resource",
-		"resource": "slimy:iframe",
+		"resource": "tera:iframe",
 		"comparison": "==",
 		"compare_to": 0
 	},
-	"interval": 40,
+	"interval": 20,
 	"name": "Regrowth",
-	"description": "You slowly regerate your mass overtime",
-	"hidden": true
+	"description": "You regenerate your mass overtime, and you regenerate faster in water."
 }

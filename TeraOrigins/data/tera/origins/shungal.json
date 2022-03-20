@@ -1,0 +1,18 @@
+{
+	"powers": [
+				"origins:more_exhaustion",
+				"tera:no_foodtwo",
+				"tera:shroomparticles",
+                "tera:boom",
+				"tera:effectimmunity",
+                "tera:healingspores",
+                "tera:poisonbomb",
+				"tera:photosynthesis",
+				"tera:poisontouch"
+	],
+	"icon": "minecraft:red_mushroom_block",
+	"impact": 3,
+        "order": 9,
+	"name": "Shungal",
+	"description": "Spore beings that choose to infect people with their annoying poisons."
+}

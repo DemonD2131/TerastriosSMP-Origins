@@ -1,0 +1,28 @@
+{
+	"powers": [
+	"tera:hunger",
+	"origins:no_shield",
+	"tera:particle",
+	"tera:speed",
+	"tera:bad_swimmer",
+	"tera:weather_buff",
+	"tera:lightning_immunity",
+        "origins:tailwind",
+	"tera:storm_speed",
+	"tera:water_weakness",
+	"tera:light",
+	"tera:lightningstrike",
+        "tera:fly",
+        "tera:sense",
+        "tera:sleep",
+        "tera:claustrophobia",
+        "tera:thorns_dmg",
+        "tera:storm_strength",
+        "tera:weak_point"
+	],
+	"icon": "minecraft:horn_coral",
+	"order": 6,
+	"impact": 3,
+	"name": "Psarlian",
+	"description": "This extraordinary creature has the rare power to manipulate storms to it's will and uses them vigorously."
+}

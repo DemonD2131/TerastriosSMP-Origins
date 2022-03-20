@@ -18,11 +18,11 @@
 			"conditions": [
 				{
 					"type": "origins:in_tag",
-					"tag": "minecraft:base_stone_overworld"
+					"tag": "minecraft:fences"
 				},
 				{
 					"type": "origins:in_tag",
-					"tag": "minecraft:base_stone_nether"
+					"tag": "minecraft:fence_gates"
 				}
 			]
 		},
@@ -48,11 +48,7 @@
 					{
 						"type": "origins:in_tag",
 						"tag": "minecraft:fence_gates"
-					},
-					{
-						"type": "origins:in_tag",
-						"tag": "minecraft:fence_gates"
-					},
+					}
 				]
 			}
 		}
@@ -74,10 +70,10 @@
 	"effect": {
 		"type": "origins:overlay",
 		"texture": "minecraft:textures/block/bone_block_top.png",
-		"strength": 0.7,
-		"red": 0.1,
-		"green": 0.1,
-		"blue": 0.1,
+		"strength": 0.2,
+		"red": 0.8,
+		"green": 0.8,
+		"blue": 0.8,
 		"draw_mode": "texture",
 		"draw_phase": "below_hud",
 		"hide_with_hud": false,

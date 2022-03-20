@@ -1,7 +1,7 @@
 {
 	"powers": [
                 "tera:bouncy",
-				"tera:fall",
+				"tera:slimefall",
                 "tera:green",
                 "tera:liquid",
                 "tera:reconstruction",
@@ -11,11 +11,16 @@
 				"tera:slimy_skin",
 				"tera:megajump",
 				"tera:slimeballs",
+				"tera:iframe",
+				"tera:massbar",
+				"tera:massregen",
+				"tera:water",
+				"tera:slimeregrowth",
 				"tera:waterabsorber"
 	],
 	"icon": "minecraft:slime_block",
 	"impact": 3,
-        "order": 6,
+        "order": 5,
 	"name": "Oozlian",
 	"description": "Jiggling, bouncing and usually lively creatures made of sentient ooze, they can live in most all environments."
 }

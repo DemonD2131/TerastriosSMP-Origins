@@ -1,0 +1,292 @@
+
+{
+    "type": "origins:multiple",
+    "ascend":
+    {
+        "type": "origins:active_self",
+        "entity_action":
+        {
+            "type": "origins:if_else",
+            "condition":
+            {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "else_action":
+            {
+                "type": "origins:damage",
+                "amount": 0,
+                "source":
+                {
+                    "name": "null",
+                    "bypasses_armor": true
+                }
+            },
+            "if_action":
+            {
+                "type": "origins:change_resource",
+                "resource": "*:*_up_resource",
+                "change": 4
+            }
+        },
+        "cooldown": 0,
+        "hud_render":
+        {
+            "should_render": false
+        },
+        "key":
+        {
+            "key": "key.jump",
+            "continuous": true
+        }
+    },
+    "descend":
+    {
+        "type": "origins:active_self",
+        "entity_action":
+        {
+            "type": "origins:change_resource",
+            "resource": "*:*_down_resource",
+            "change": 4
+        },
+        "cooldown": 0,
+        "hud_render":
+        {
+            "should_render": false
+        },
+        "key":
+        {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "float":
+    {
+        "type": "origins:action_over_time",
+        "entity_action":
+        {
+            "type": "origins:if_else",
+            "condition":
+            {
+                "type": "origins:resource",
+                "resource": "*:*_up_resource",
+                "comparison": "!=",
+                "compare_to": 0
+            },
+            "if_action":
+            {
+                "type": "origins:apply_effect",
+                "effect":
+                {
+                    "effect": "minecraft:levitation",
+                    "duration": 2,
+                    "amplifier": 1,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            "else_action":
+            {
+                "type": "origins:if_else",
+                "condition":
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_down_resource",
+                    "comparison": "!=",
+                    "compare_to": 0
+                },
+                "if_action":
+                {
+                    "type": "origins:if_else",
+                    "condition":
+                    {
+                        "type": "origins:status_effect",
+                        "effect": "minecraft:levitation",
+                        "min_amplifier": -1
+                    },
+                    "if_action":
+                    {
+                        "type": "origins:clear_effect",
+                        "effect": "minecraft:levitation"
+                    },
+                    "else_action":
+                    {
+                        "type": "origins:apply_effect",
+                        "effect":
+                        {
+                            "effect": "minecraft:levitation",
+                            "duration": 2,
+                            "amplifier": -5,
+                            "show_particles": false,
+                            "show_icon": false
+                        }
+                    }
+                },
+                "else_action":
+                {
+                    "type": "origins:apply_effect",
+                    "effect":
+                    {
+                        "effect": "minecraft:levitation",
+                        "duration": 2,
+                        "amplifier": -1,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                }
+            }
+        },
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "interval": 1
+    },
+    "down_resource":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "start_value": 0,
+        "hud_render":
+        {
+            "should_render": false
+        }
+    },
+    "up_resource":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "start_value": 0,
+        "hud_render":
+        {
+            "should_render": false
+        }
+    },
+    "resource":
+    {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "start_value": 0,
+        "hud_render":
+        {
+            "should_render": false
+        }
+    },
+    "toggle":
+    {
+        "type": "origins:active_self",
+        "entity_action":
+        {
+            "type": "origins:if_else",
+            "condition":
+            {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "==",
+                "compare_to": 1
+            },
+            "if_action":
+            {
+                "type": "origins:change_resource",
+                "resource": "*:*_resource",
+                "change": -1
+            },
+            "else_action":
+            {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": 1
+                    },
+                    {
+                        "type": "origins:apply_effect",
+                        "effect":
+                        {
+                            "effect": "minecraft:levitation",
+                            "duration": 5,
+                            "amplifier": 1,
+                            "show_particles": false,
+                            "show_icon": false
+                        }
+                    }
+                ]
+            }
+        },
+        "key":
+        {
+            "key": "key.origins.secondary_active"
+        },
+        "cooldown": 0,
+        "hud_render":
+        {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5
+        }
+    },
+    "suffocate":
+    {
+        "type": "origins:self_action_when_hit",
+        "cooldown": 1,
+        "damage_condition":
+        {
+            "type": "origins:name",
+            "inverted": false,
+            "name": "inWall"
+        },
+        "entity_action":
+        {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    },
+    "drain1":
+    {
+        "type": "origins:action_over_time",
+        "entity_action":
+        {
+            "type": "origins:change_resource",
+            "resource": "*:*_up_resource",
+            "change": -1
+        },
+        "interval": 1
+    },
+    "drain2":
+    {
+        "type": "origins:action_over_time",
+        "entity_action":
+        {
+            "type": "origins:change_resource",
+            "resource": "*:*_down_resource",
+            "change": -1
+        },
+        "interval": 1
+    },
+    "hunger_drain":
+    {
+        "type": "origins:exhaust",
+        "interval": 100,
+        "exhaustion": 1,
+        "condition":
+        {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1
+        }
+  
+    },
+    "name": "Flight",
+    "description": "(Secondary)-Calling on the wind lifts you up into the air letting you float around at a slow pace."
+}

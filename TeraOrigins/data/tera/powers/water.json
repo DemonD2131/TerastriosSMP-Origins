@@ -1,0 +1,154 @@
+{
+	"type":"origins:multiple",
+
+	"waterdebuff_25": {
+		"type": "origins:action_over_time",
+        "entity_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:weakness",
+					"duration": 10,
+					"show_particles": false,
+					"show_icon": false,
+					"amplifier": 1
+				}
+			]
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "tera:massbar",
+                    "comparison": "<=",
+                    "compare_to": 25
+                },
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": ">=",
+					"compare_to": 0.3
+				}
+			]
+		}
+	},
+
+	"waterdebuff_50": {
+		"type": "origins:action_over_time",
+        "entity_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:weakness",
+					"duration": 10,
+					"show_particles": false,
+					"show_icon": false,
+					"amplifier": 0
+				}
+			]
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "tera:massbar",
+                    "comparison": ">",
+                    "compare_to": 25
+                },
+			    {
+                    "type": "origins:resource",
+                    "resource": "tera:massbar",
+                    "comparison": "<=",
+                    "compare_to": 50
+                },
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": ">=",
+					"compare_to": 0.5
+				}
+			]
+		}
+	},
+
+	"waterdebuff_75": {
+		"type": "origins:action_over_time",
+        "entity_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:slowness",
+					"duration": 10,
+					"show_particles": false,
+					"show_icon": false,
+					"amplifier": 0
+				}
+			]
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "tera:massbar",
+                    "comparison": ">",
+                    "compare_to": 50
+                },
+			    {
+                    "type": "origins:resource",
+                    "resource": "tera:massbar",
+                    "comparison": "<=",
+                    "compare_to": 75
+                },
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": ">=",
+					"compare_to": 0.8
+				}
+			]
+		}
+	},
+
+	"waterdebuff_100": {
+		"type": "origins:action_over_time",
+        "entity_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:slowness",
+					"duration": 10,
+					"show_particles": false,
+					"show_icon": false,
+					"amplifier": 1
+				}
+			]
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+                {
+                    "type": "origins:resource",
+					"resource": "tera:massbar",
+					"comparison": ">",
+					"compare_to": 75
+                },
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": ">=",
+					"compare_to": 0.8
+				}
+			]
+		}
+	},
+	"hidden": true,
+	"name": "Water",
+	"description": "Because you are a heavier than water, you sink in it, but at least you don't need to breath. When underwater, you're slower and weaker, because you're a bit diluted, but you also regenare your mass faster"
+}

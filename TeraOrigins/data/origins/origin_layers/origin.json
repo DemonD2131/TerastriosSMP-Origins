@@ -1,12 +1,15 @@
 {
   "replace": false,
   "origins": [
-    "tera:xornen",
-    "tera:quesian",
-    "tera:ebongnaut",
-    "tera:oozlian",
-    "tera:pyrezyte",
-    "tera:rimelin",
-	  "tera:aerser"
+		"tera:aerser",
+		"tera:aquesian",
+		"tera:ebongnaut",
+		"tera:oozlian",
+		"tera:khamiel",
+		"tera:rimelin",
+		"tera:psarlian",
+		"tera:pyrezyte",
+		"tera:shungal",
+		"tera:xornen"
   ]
 }

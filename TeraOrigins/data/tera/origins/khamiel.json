@@ -1,0 +1,28 @@
+{
+	"powers": [
+                "origins:climbing",
+				"tera:camouflage",
+                "tera:poison",
+				"tera:injectone",
+				"tera:injecttwo",
+				"tera:injectthree",
+				"tera:injectfour",
+                "tera:poison_particles",
+				"tera:courseirritation",
+                "tera:toggle",
+				"tera:claylungs",
+				"tera:sandize",
+				"tera:claws",
+				"tera:sand_claws",
+				"origins:water_vulnerability",
+				"origins:carnivore",
+				"origins:hotblooded",
+				"tera:fire_damage",
+				"tera:burrow"
+	],
+	"icon": "minecraft:sand",
+	"impact": 3,
+        "order": 4,
+	"name": "Khamiel",
+	"description": "Scorpid-like races that thrive in desert lands. The sands thrive under their claw and their sting are potent and powerful."
+}

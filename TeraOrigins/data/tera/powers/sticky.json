@@ -1,0 +1,105 @@
+{
+    "name": "Wall Stick",
+    "description": "You can stick to walls and slowly slide down on them. You also always stick to ceilings, but if you crouch, you fall off.",
+    "type": "origins:multiple",
+    "particles": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "particle minecraft:item_slime ~ ~0.1 ~",
+            "permission_level": 4
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0.2,
+                    "offset_y": 0.1,
+                    "offset_z": 0
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0,
+                    "offset_y": 0.1,
+                    "offset_z": 0.2
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": -0.2,
+                    "offset_y": 0.1,
+                    "offset_z": 0
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0,
+                    "offset_y": 0.1,
+                    "offset_z": -0.2
+                }
+            ]
+        }
+    },
+    "sticktowalls": {
+        "type": "origins:modify_falling",
+        "velocity": 0.004,
+        "take_fall_damage": false,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0.2,
+                    "offset_y": 0.1,
+                    "offset_z": 0
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0,
+                    "offset_y": 0.1,
+                    "offset_z": 0.2
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": -0.2,
+                    "offset_y": 0.1,
+                    "offset_z": 0
+                },
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0,
+                    "offset_y": 0.1,
+                    "offset_z": -0.2
+                }
+            ]
+        }
+    },
+    "sticktoceilings": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:levitation",
+                "duration": 3,
+                "amplifier": 0,
+                "show_particles": false
+            }
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_collision",
+                    "offset_x": 0,
+                    "offset_y": 0.3,
+                    "offset_z": 0
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

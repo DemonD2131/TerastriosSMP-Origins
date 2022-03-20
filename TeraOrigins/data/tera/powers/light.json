@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"hidden": true,
+	"name": "Light",
+	"description": "You are much lighter than average, meaning you take more knockback.",
+	"modifiers": {
+		"attribute": "minecraft:generic.knockback_resistance",
+		"value": 0.7,
+		"operation": "subtraction"
+	}
+}

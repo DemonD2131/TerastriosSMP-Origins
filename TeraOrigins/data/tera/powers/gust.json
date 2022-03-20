@@ -13,7 +13,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "playsound minecraft:item.firecharge.use master @a[distance=0..10] ~ ~ ~ 99 0"
+                "command": "playsound minecraft:entity.ender_dragon.flap master @a[distance=0..10] ~ ~ ~ 99 0"
             },
             {
                 "type": "origins:add_velocity",
