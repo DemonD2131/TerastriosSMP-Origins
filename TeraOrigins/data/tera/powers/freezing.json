@@ -1,12 +1,15 @@
 {
-    "type": "origins:damage_over_time",
+    
     "hidden": false,
     "name": "Freezing",
     "description": "As you are made of water if you get to cold you will freeze solid unless you keep yourself warm",
-    "interval": 30,
+    "type": "origins:multiple",
+        "freezing": {
+    "type": "origins:damage_over_time",
+    "interval": 40,
     "damage": 1,
     "protection_effectiveness": 0,
-    "onset_delay": 600,
+    "onset_delay": 1,
     "damage_easy": 1,
     "damage_source": {
         "bypasses_armor": true,
@@ -17,32 +20,66 @@
         "name": "freeze"
     },
     "condition": {
+        "type": "origins:resource",
+        "resource": "tera:freezing_resource",
+        "comparison": "<=",
+        "compare_to": 0
+    }
+},
+"freezing_two":{
+        "type": "origins:stacking_status_effect",
+        "condition": {
+        "type": "origins:resource",
+        "resource": "tera:freezing_resource",
+        "comparison": "<=",
+        "compare_to": 0
+        },
+        "min_stacks": 1,
+        "max_stacks": 600,
+        "duration_per_stack": 20,
+        "effects": [
+            {
+                "duration": 10,
+                "is_ambient": false,
+                "show_particles": true,
+                "show_icon": true,
+                "effect": "minecraft:slowness"
+            }
+        ]
+},
+"resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 120,
+    "inverted": true,
+    "hud_render": {
+        "bar_index": 0,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "should_render": true,
+        "condition": { 
+            "type": "origins:resource",
+            "resource": "tera:freezing_resource",
+            "comparison": ">=",
+            "compare_to": 120,
+            "inverted": true
+        }
+    }
+},
+"resource_action": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
         "type": "origins:and",
         "inverted": false,
         "conditions": [
             {
                 "type": "origins:biome",
-                "inverted": false,
-                "biomes": [
-                    "minecraft:snowy_beach",
-                    "minecraft:frozen_river",
-                    "minecraft:snowy_taiga_mountains",
-                    "minecraft:snowy_taiga",
-                    "minecraft:ice_spikes",
-                    "minecraft:snowy_tundra",
-					"terralith:birch_taiga",
-					"terralith:cold_shrubland",
-					"terralith:frozen_cliffs",
-					"terralith:glacial_chasm",
-					"terralith:ice_marsh",
-					"terralith:siberian_grove",
-					"terralith:siberian_taiga",
-					"terralith:skylands_winter",
-					"terralith:snowy_badlands",
-					"terralith:snowy_maple_forest",
-					"terralith:snowy_shield",
-					"terralith:wintry_forest"
-                ]
+                "condition": {
+                    "type": "origins:temperature",
+                    "comparison": "<=",
+                    "compare_to": 0.3
+                }
             },
             {
                 "type": "origins:or",
@@ -105,5 +142,20 @@
                 ]
             }
         ]
+    },
+    "if_action": {
+        "type": "origins:change_resource",
+        "resource": "tera:freezing_resource",
+        "change": -1,
+        "operation": "add"
+    },
+    "else_action": {
+        "type": "origins:change_resource",
+        "resource": "tera:freezing_resource",
+        "change": 120,
+        "operation": "set"
     }
+    },
+    "interval": 20
+}
 }

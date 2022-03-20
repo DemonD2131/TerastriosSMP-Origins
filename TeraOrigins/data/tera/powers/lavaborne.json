@@ -43,10 +43,6 @@
             ]
         }
     },
-    "fire_damage_immunity":
-    {
-        "type": "origins:fire_immunity"
-    },
     "lava_vision":
     {
         "type": "origins:lava_vision",
