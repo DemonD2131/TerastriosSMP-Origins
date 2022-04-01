@@ -152,8 +152,8 @@
     "else_action": {
         "type": "origins:change_resource",
         "resource": "tera:freezing_resource",
-        "change": 120,
-        "operation": "set"
+        "change": 6,
+        "operation": "add"
     }
     },
     "interval": 20
