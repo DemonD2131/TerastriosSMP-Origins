@@ -1,12 +1,12 @@
 {
-	"name": "Liquid",
-	"description": "You can fit through fence gates.",
+	"name": "Slip",
+	"description": "You can fit through incomplete blocks.",
 	"type": "origins:multiple",
 	"toggle": {
 		"type": "origins:toggle",
 		"active_by_default": true,
 		"key": {
-			"key": "key.sneak"
+			"key": "key.saveToolbarActivator"
 		}
 	},
 	"phase": {
@@ -14,17 +14,8 @@
 		"render_type": "blindness",
 		"view_distance": 25,
 		"block_condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:fences"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:fence_gates"
-				}
-			]
+			"type": "origins:in_tag",
+			"tag": "tera:slip"
 		},
 		"phase_down_condition": {
 			"type": "origins:sneaking"
@@ -39,25 +30,9 @@
 		"condition": {
 			"type": "origins:in_block",
 			"block_condition": {
-				"type": "origins:or",
-				"conditions": [
-					{
-						"type": "origins:in_tag",
-						"tag": "minecraft:fences"
-					},
-					{
-						"type": "origins:in_tag",
-						"tag": "minecraft:fence_gates"
-					}
-				]
+				"type": "origins:in_tag",
+				"tag": "tera:slip"
 			}
-		}
-	},
-	"fall": {
-		"type": "origins:invulnerability",
-		"damage_condition": {
-			"type": "origins:name",
-			"name": "fall"
 		}
 	},
 	"sufficate": {
