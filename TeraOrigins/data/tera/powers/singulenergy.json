@@ -1,8 +1,0 @@
-{
-	"type": "origins:particle",
-	"particle": "minecraft:enchant",
-	"frequency": 3,
-	"name": "Singul Energy",
-	"description": "Where did you come from?",
-	"hidden": false
-}

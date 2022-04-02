@@ -1,7 +1,0 @@
-{
-	"type": "origins:particle",
-	"particle": "minecraft:spore_blossom_air",
-	"frequency": 6,
-	"name": "Spores",
-	"description": "Your body emits spores that flutter and linger in the air."
-}
