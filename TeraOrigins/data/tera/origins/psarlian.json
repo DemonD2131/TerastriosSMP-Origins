@@ -18,7 +18,8 @@
         "tera:claustrophobia",
         "tera:thorns_dmg",
         "tera:storm_strength",
-        "tera:weak_point"
+        "tera:weak_point",
+		"tera:netherite_bad"
 	],
 	"icon": "minecraft:horn_coral",
 	"order": 6,

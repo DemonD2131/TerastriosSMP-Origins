@@ -18,10 +18,23 @@
     }
   }
 },
-"restrict": {
+"starve": {
+
   "type": "origins:prevent_item_use",
   "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+          {
+      "type": "origins:ingredient",
+      "ingredient": {
+          "tag": "tera:gapple"
+      },
+          "inverted": true
+  },
+  {
       "type": "origins:food"
+  }
+  ]
   }
 }
 }

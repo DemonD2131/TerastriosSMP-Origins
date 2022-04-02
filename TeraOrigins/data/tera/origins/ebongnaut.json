@@ -16,7 +16,8 @@
 				"tera:pick_iron",
 				"tera:pick_gold",
 				"tera:pick_dia",
-				"tera:pick_netherite"
+				"tera:pick_netherite",
+				"tera:netherite_bad"
 	],
 	"icon": "minecraft:crying_obsidian",
 	"impact": 3,

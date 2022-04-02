@@ -18,7 +18,8 @@
 				"origins:carnivore",
 				"origins:hotblooded",
 				"tera:fire_damage",
-				"tera:burrow"
+				"tera:burrow",
+				"tera:netherite_bad"
 	],
 	"icon": "minecraft:sand",
 	"impact": 3,

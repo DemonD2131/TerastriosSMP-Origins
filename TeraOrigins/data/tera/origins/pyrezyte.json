@@ -9,7 +9,8 @@
 				"tera:burstaura",
                 "tera:cinder_fed",
                 "tera:no_eating",
-				"tera:fireball"
+				"tera:fireball",
+				"tera:netherite_bad"
 	],
 	"icon": "minecraft:magma_block",
 	"impact": 3,

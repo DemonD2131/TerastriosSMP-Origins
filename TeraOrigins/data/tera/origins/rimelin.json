@@ -21,7 +21,8 @@
 		"tera:snowflakes_particles",
 		"tera:fire_damage",
 		"tera:freeze_regen",
-		"tera:cold_nap"
+		"tera:cold_nap",
+		"tera:netherite_bad"
 	],
 	"icon": "architects_palette:polished_packed_ice",
 	"impact": 3,

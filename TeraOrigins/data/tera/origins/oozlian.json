@@ -16,7 +16,8 @@
 				"tera:massregen",
 				"tera:water",
 				"tera:slimeregrowth",
-				"tera:waterabsorber"
+				"tera:waterabsorber",
+				"tera:netherite_bad"
 	],
 	"icon": "minecraft:slime_block",
 	"impact": 3,

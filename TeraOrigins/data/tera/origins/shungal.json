@@ -8,7 +8,8 @@
                 "tera:healingspores",
                 "tera:poisonbomb",
 				"tera:photosynthesis",
-				"tera:poisontouch"
+				"tera:poisontouch",
+				"tera:netherite_bad"
 	],
 	"icon": "minecraft:red_mushroom_block",
 	"impact": 3,
