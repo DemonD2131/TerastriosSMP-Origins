@@ -81,7 +81,7 @@
             "type": "origins:apply_effect",
             "effect": {
                 "effect": "minecraft:levitation",
-                "duration": 3,
+                "duration": 7,
                 "amplifier": 0,
                 "show_particles": false
             }
@@ -92,7 +92,7 @@
                 {
                     "type": "origins:block_collision",
                     "offset_x": 0,
-                    "offset_y": 0.3,
+                    "offset_y": 0.05,
                     "offset_z": 0
                 },
                 {
