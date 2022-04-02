@@ -1,0 +1,40 @@
+{
+  "name": "Water Absorber",
+    "description": "You can't eat normal food, instead you satiate by absorbing water.",
+  "type": "origins:multiple",
+  "feed":{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:feed",
+    "food": 1,
+    "saturation": 1
+  },
+  "interval": 60,
+  "condition": {
+    "type": "origins:in_block_anywhere",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:water"
+    }
+  }
+},
+"starve": {
+
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+          {
+      "type": "origins:ingredient",
+      "ingredient": {
+          "tag": "tera:gapple"
+      },
+          "inverted": true
+  },
+  {
+      "type": "origins:food"
+  }
+  ]
+  }
+}
+}

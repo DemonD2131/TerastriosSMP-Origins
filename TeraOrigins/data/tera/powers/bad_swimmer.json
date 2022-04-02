@@ -1,0 +1,13 @@
+{
+    "type": "origins:exhaust",
+    "description": "Water stops you being able to interact with your lightning abilitys causing you to exhaust faster in it.",
+    "name": "Lightning Drain",
+    "interval": 20,
+    "exhaustion": 4,
+    "condition": {
+        "type": "origins:submerged_in",
+        "inverted": false,
+        "fluid": "water"
+    }
+    
+}

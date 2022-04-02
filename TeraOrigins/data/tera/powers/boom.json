@@ -1,0 +1,45 @@
+{
+	"type": "origins:self_action_when_hit",
+	"entity_action": {
+		"type": "origins:choice",
+		"actions": [{
+				"element": {
+					"type": "origins:and",
+					"actions": [{
+							"type": "origins:spawn_entity",
+							"entity_type": "minecraft:tnt",
+							"tag": "{Fuse:0s}"
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 1,
+							"action": {
+							"type": "origins:damage",
+							"amount": 1,
+							"source": {
+								"name": "explosion"
+							}
+							}
+							
+						}
+					]
+				},
+				"weight": 20
+			},
+			{
+				"element": {
+					"type": "origins:gain_air",
+					"value": 0
+				},
+				"weight": 80
+			}
+		]
+	},
+
+	"damage_condition": {
+		"type": "origins:fire"
+	},
+	"cooldown": 5,
+	"name": "Spontaneous combustion",
+	"description": "Being set on fire may cause you to explode"
+}

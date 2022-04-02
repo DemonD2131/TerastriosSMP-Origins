@@ -1,0 +1,6 @@
+{
+  "type": "origins:ignore_water",
+  "hidden": false,
+  "name": "Sink",
+  "description": "You are mostly made of stone, so you sink in water, but can breathe twice as long."
+}

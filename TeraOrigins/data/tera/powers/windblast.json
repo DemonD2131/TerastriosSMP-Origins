@@ -1,0 +1,61 @@
+{
+    "type": "origins:multiple",
+    "name": "Wind Blast",
+    "description": "You conjure a powerful blast of air to knockback your enemies.",
+    "hidden": false,
+    "projectile":
+    {
+        "type": "origins:fire_projectile",
+        "cooldown": 300,
+        "hud_render":
+        {
+            "bar_index": 5
+        },
+        "entity_type": "minecraft:llama_spit",
+        "sound": "minecraft:item.armor.equip_elytra",
+        "speed": 2,
+        "count": 30,
+        "divergence": 20,
+        "key": "primary"
+    },
+    "knockback":
+    {
+        "type": "origins:target_action_on_hit",
+        "cooldown": 1,
+        "entity_action":
+        {
+            "type": "origins:add_velocity",
+            "space": "velocity_horizontal_normalized",
+            "set": false,
+            "z": 2,
+            "y": 0.2
+        },
+        "damage_condition":
+        {
+            "type": "origins:and",
+            "inverted": false,
+            "conditions": [
+                {
+                    "type": "origins:projectile",
+                    "inverted": false,
+                    "projectile": "minecraft:llama_spit"
+                }
+            ]
+        }
+    },
+    "exhaust":
+    {
+        "type": "origins:active_self",
+        "cooldown": 300,
+        "key": "primary",
+        "entity_action":
+        {
+            "type": "origins:exhaust",
+            "amount": 15
+        },
+        "hud_render":
+        {
+            "should_render": false
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{    
+    "name": "Lava Pool",
+	"description": "You can swim in lava like it is water and see in it too.",
+    "type": "origins:multiple",
+    "enable_swimming_in_lava":
+    {
+        "type": "origins:swimming",
+        "condition":
+        {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">",
+            "compare_to": 0.0,
+            "inverted": false
+        }
+    },
+    "like_water_for_lava":
+    {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action":
+        {
+            "type": "origins:add_velocity",
+            "y": 0.04,
+            "set": true
+        },
+        "condition":
+        {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:lava"
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:swimming",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "lava_vision":
+    {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 45
+    },
+    "agile_swimmer_in_lava":
+    {
+        "type": "origins:modify_lava_speed",
+        "modifier":
+        {
+            "value": 1.25,
+            "operation": "multiply_base"
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Gelatinous",
+    "description": "You are more vulnerable to sharp objects, but less vulnerable to arrows.",
+    "type": "origins:multiple",
+    "power1": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "fabric:swords"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "modifier": {
+            "name": "Vulnerable to sharp objects",
+            "operation": "multiply_total",
+            "value": 0.3
+        }
+    },
+
+    "power2": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:projectile",
+            "tag": "minecraft:arrows"
+        },
+        "modifier": {
+            "name": "Less vulnerable to arrows",
+            "operation": "multiply_total",
+            "value": -0.50
+        }
+    }
+}

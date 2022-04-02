@@ -1,0 +1,24 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "inverted": false,
+        "entity_condition": {
+            "type": "origins:equipped_item",
+            "inverted": false,
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "inverted": false,
+                "ingredient": {
+                    "item": "gold_pickaxe"
+                }
+            }
+        }
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.3
+    },
+    "hidden": true
+}
