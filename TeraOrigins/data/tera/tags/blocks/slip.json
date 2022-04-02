@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:iron_bars",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "#minecraft:trapdoors",
+        "#minecraft:doors",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:infested_cracked_stone_bricks",
+        "minecraft:cracked_nether_bricks",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:cracked_deepslate_tiles",
+        "minecraft:cracked_polished_blackstone_bricks"
+    ]
+}
