@@ -1,7 +1,7 @@
 {
 	"powers": [
                 "origins:fire_immunity",
-				"origins:no_shield",
+				"tera:shieldless",
 				"tera:singultint",
 				"tera:bulky",
                 "tera:singulenergy",

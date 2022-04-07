@@ -1,0 +1,11 @@
+{
+    "name": "Shieldess",
+    "description": "MEGaMiND WHERE ARE THE SHIELDS, No shields????",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "tera:shields"
+        }
+    }
+}
