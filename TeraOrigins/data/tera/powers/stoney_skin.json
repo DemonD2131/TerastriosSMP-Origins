@@ -8,7 +8,7 @@
   "modifier": {
     "name": "Natural Armor health bonus",
     "attribute": "minecraft:generic.armor",
-    "value": 3.0,
+    "value": 2.0,
     "operation": "addition"
   }
 }

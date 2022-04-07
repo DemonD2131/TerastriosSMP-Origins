@@ -1,23 +1,9 @@
 {
 	"name": "Jumpy",
-	"description": "You can toggle your jump height with your primary.",
-	"type": "origins:multiple",
-	"toggle": {
-		"type": "origins:toggle",
-		"active_by_default": true,
-		"key": {
-			"key": "key.origins.primary_active"
-		}
-	},
-	"jump": {
+	"description": "More jump height",
 		"type": "origins:modify_jump",
 		"modifier": {
 			"operation": "addition",
 			"value": 0.2
-		},
-		"condition": {
-			"type": "origins:power_active",
-    		"power": "tera:bouncy_toggle"
-		}
 		}
 }

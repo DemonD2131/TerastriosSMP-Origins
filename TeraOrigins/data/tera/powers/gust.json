@@ -17,12 +17,12 @@
             },
             {
                 "type": "origins:add_velocity",
-                "z": 0.5,
+                "z": 0.4,
                 "space": "local"
             },
             {
                 "type": "origins:add_velocity",
-                "y": 0.6,
+                "y": 0.5,
                 "space": "world"
             },
             {

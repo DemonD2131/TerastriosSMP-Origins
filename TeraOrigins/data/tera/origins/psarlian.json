@@ -1,7 +1,6 @@
 {
 	"powers": [
 	"tera:hunger",
-	"origins:no_shield",
 	"tera:particle",
 	"tera:speed",
 	"tera:bad_swimmer",
@@ -15,7 +14,6 @@
         "tera:fly",
         "tera:sense",
         "tera:sleep",
-        "tera:claustrophobia",
         "tera:thorns_dmg",
         "tera:storm_strength",
         "tera:weak_point",
