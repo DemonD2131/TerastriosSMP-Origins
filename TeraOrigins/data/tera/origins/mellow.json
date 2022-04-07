@@ -1,0 +1,17 @@
+{
+	"powers": [
+        "tera:on_kill",
+        "tera:start_sequence",
+        "tera:railgun",
+        "tera:start_boom",
+        "tera:no_drop",
+        "tera:no_boom",
+        "tera:natural_stonks"
+	],
+	"icon": "minecraft:end_crystal",
+	"impact": 3,
+    "order": 4,
+    "unchoosable": true,
+	"name": "Me when I fucking GET YOU",
+	"description": "Go now mellow, commit a crime."
+}

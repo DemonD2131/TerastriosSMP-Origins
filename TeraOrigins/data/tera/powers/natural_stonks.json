@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Mellow skin.",
+	"description": "LORE: you listen to so much bullshit that you have gotten resistant.",
+	"modifier": {
+		"attribute": "minecraft:generic.armor",
+		"value": 23,
+		"operation": "addition"
+	}
+}
