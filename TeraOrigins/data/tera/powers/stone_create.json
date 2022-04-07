@@ -15,7 +15,6 @@
             }
           }
       },
-
 	"cooldown": 3500,
         "hud_render": {
        	 	"should_render": true,
@@ -24,5 +23,7 @@
     	},
 	"name": "Stone Barrier",
 	"description": "Using your secondary you surround yourself with stone to entrap foes or create a barrier between you and enemies.",
-	"key": "key.origins.secondary_active"
+	"key": {
+		"key": "key.origins.secondary_active"
+	}
 }
