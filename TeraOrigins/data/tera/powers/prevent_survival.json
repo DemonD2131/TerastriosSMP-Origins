@@ -1,0 +1,14 @@
+{
+    "name": "Immortallity you FUCKS",
+    "description": "The file is called prevent_survival :>>>>>>>>>",
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "summon minecraft:creeper ~ ~ ~ {powered:1,Fuse:0,ExplosionRadius:6,ignited:1,CustomName:'[{\"text\":\"Psionic FUCKING blast\"}]'}",
+        "permission_level": 4
+    },
+    "condition": {
+        "type": "origins:constant",
+        "value": true
+    }
+}
