@@ -21,7 +21,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "summon minecraft:creeper ~ ~ ~ {powered:1,Fuse:0,ExplosionRadius:30,ignited:1,CustomName:'[{\"text\":\"GET FUCKED\"}]'}",
+                    "command": "summon minecraft:creeper ~ ~ ~ {powered:1,Fuse:0,ExplosionRadius:6,ignited:1,CustomName:'[{\"text\":\"GET FUCKED\"}]'}",
                     "permission_level": 4
                 }
             ]
