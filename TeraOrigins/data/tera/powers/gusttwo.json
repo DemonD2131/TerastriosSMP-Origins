@@ -13,26 +13,26 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.ender_dragon.flap master @a[distance=0..10] ~ ~ ~ 99 0"
+                "command": "playsound minecraft:entity.phantom.flap master @a[distance=0..10] ~ ~ ~ 99 0"
             },
             {
                 "type": "origins:add_velocity",
-                "z": 0.4,
+                "z": 0.5,
                 "space": "local"
             },
             {
                 "type": "origins:add_velocity",
-                "y": 0.5,
+                "y": 0.6,
                 "space": "world"
             },
             {
                 "type": "origins:exhaust",
-                "amount": 0.5
+                "amount": 1.0
             },
             {
                 "type": "origins:change_resource",
                 "resource": "*:energy_resource",
-                "change": -2,
+                "change": -1,
                 "operation": "add"
             }
         ]
@@ -41,5 +41,7 @@
     "hud_render": {
         "should_render": false
     },
-    "key": "key.origins.secondary_active"
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
 }

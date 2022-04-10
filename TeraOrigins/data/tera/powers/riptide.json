@@ -2,10 +2,10 @@
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:add_velocity",
-        "z": 1.4,
+        "z": 1.5,
         "space": "local"
     },
-    "cooldown": 120,
+    "cooldown": 80,
     "hud_render":{
         "should_render": true,
         "bar_index": 1

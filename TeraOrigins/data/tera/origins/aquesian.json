@@ -11,8 +11,8 @@
 				"tera:riptide",
 				"tera:evaporate",
                 "tera:freezing",
-                "tera:freezingtwo",
-				"tera:netherite_bad"
+				"tera:netherite_bad",
+                "tera:freezingtwo"
 	],
 	"icon": "valley:glow_kelp_block",
 	"impact": 3,

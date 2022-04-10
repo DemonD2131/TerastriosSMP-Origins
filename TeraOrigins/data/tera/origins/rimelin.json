@@ -6,6 +6,8 @@
 		"tera:powder_snow_sprinter",
 		"tera:powder_snow_sprinter_two",
 		"tera:powder_snow_sprinter_three",
+		"tera:freeze_damage",
+		"tera:freeze_regen",
 		"tera:frosty_gust",
 		"tera:frost_walker",
 		"tera:frost_walker_two",
@@ -19,9 +21,8 @@
 		"tera:ice_and_snow_breaking",
 		"tera:snowflakes_particles",
 		"tera:fire_damage",
-		"tera:freeze_regen",
-		"tera:cold_nap",
-		"tera:netherite_bad"
+		"tera:netherite_bad",
+		"tera:cold_nap"
 	],
 	"icon": "architects_palette:polished_packed_ice",
 	"impact": 3,

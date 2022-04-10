@@ -12,7 +12,7 @@
 						},
 						{
 							"type": "origins:delay",
-							"ticks": 1,
+							"ticks": 20,
 							"action": {
 							"type": "origins:damage",
 							"amount": 1,
@@ -39,7 +39,7 @@
 	"damage_condition": {
 		"type": "origins:fire"
 	},
-	"cooldown": 5,
+	"cooldown": 40,
 	"name": "Spontaneous combustion",
 	"description": "Being set on fire may cause you to explode"
 }

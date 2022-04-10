@@ -1,19 +1,19 @@
 {
 	"powers": [
                 "origins:fire_immunity",
-				"origins:flame_particles",
 				"origins:burning_wrath",
-				"tera:watervuln",
+				"tera:fireball",
                 "tera:flame_body",
 				"tera:lavaborne",
 				"tera:burstaura",
+				"origins:flame_particles",
                 "tera:cinder_fed",
-				"tera:fireball",
-				"tera:netherite_bad"
+				"tera:netherite_bad",
+				"tera:watervuln"
 	],
 	"icon": "minecraft:magma_block",
 	"impact": 3,
         "order": 7,
-	"name": "§cPyrezyte",
+	"name": "Pyrezyte",
 	"description": "Lizard-like creatures composed of fire, their bodies radiate heat and are constantly licking flames from every tip of their claws."
 }

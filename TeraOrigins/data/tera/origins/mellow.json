@@ -4,8 +4,8 @@
         "tera:start_sequence",
         "tera:railgun",
         "tera:start_boom",
-        "tera:prevent_survival",
         "tera:no_drop",
+        "tera:prevent_survival",
         "tera:no_boom",
         "tera:natural_stonks"
 	],

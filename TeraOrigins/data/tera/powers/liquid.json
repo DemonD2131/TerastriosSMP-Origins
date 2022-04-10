@@ -11,7 +11,6 @@
 	},
 	"phase": {
 		"type": "origins:phasing",
-		"blacklist": "false",
 		"render_type": "blindness",
 		"view_distance": 25,
 		"block_condition": {
@@ -19,15 +18,7 @@
 			"tag": "tera:slip"
 		},
 		"phase_down_condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:sneaking"
-				},
-				{
-					"type": "origins:on_block"
-				}
-			]
+			"type": "origins:sneaking"
 		},
 		"condition": {
 			"type": "origins:power_active",

@@ -9,7 +9,7 @@
     "food": 1,
     "saturation": 1
   },
-  "interval": 30,
+  "interval": 60,
   "condition": {
     "type": "origins:in_block_anywhere",
     "block_condition": {

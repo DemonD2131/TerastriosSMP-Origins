@@ -1,6 +1,6 @@
 {
     "name": "Blastproof",
-    "description": "Explosions error modulo division error not found.",
+    "description": "Explosions deal greatly reduced damage to you.",
     "type": "origins:modify_damage_taken",
     "damage_condition": {
         "type": "origins:or",
@@ -21,6 +21,6 @@
     },
     "modifier": {
         "operation": "multiply_base",
-        "value": -1
+        "value": -1.0
     }
 }

@@ -8,15 +8,15 @@
         "tera:respiration",
         "tera:sink",
         "tera:claustrophile",
+		"tera:netherite_bad",
 		"tera:foodiron",
 		"tera:foodgold",
 		"tera:foodcopper",
-		"tera:pick_stone",
+        "tera:pick_stone",
 		"tera:pick_iron",
 		"tera:pick_gold",
 		"tera:pick_dia",
-		"tera:pick_netherite",
-		"tera:netherite_bad"
+		"tera:pick_netherite"
 	],
 	"icon": "minecraft:raw_iron_block",
 	"order": 10,

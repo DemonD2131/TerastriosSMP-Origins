@@ -16,7 +16,7 @@
         "key": {
             "key": "key.origins.secondary_active"
         },
-        "cooldown": 40,
+        "cooldown": 20,
         "hud_render": {
             "should_render": false
         }

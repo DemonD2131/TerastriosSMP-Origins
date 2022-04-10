@@ -6,7 +6,7 @@
     "resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 10,
+        "max": 18,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
@@ -18,14 +18,14 @@
         "entity_action_chosen": {
             "type": "origins:change_resource",
             "resource": "*:energy_resource",
-            "change": -10,
+            "change": -18,
             "operation": "add"
         },
         "execute_chosen_when_orb": true,
         "entity_action_respawned": {
             "type": "origins:change_resource",
             "resource": "*:energy_resource",
-            "change": -10,
+            "change": -18,
             "operation": "add"
         }
     },
@@ -38,7 +38,7 @@
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:energy_resource",
-            "change": 1,
+            "change": 2,
             "operation": "add"
         }
     }

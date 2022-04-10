@@ -1,0 +1,23 @@
+{
+	"powers": [
+                "tera:energy",
+		        "tera:gusttwo",
+				"origins:slow_falling",
+				"origins:tailwind",
+				"tera:clawstwo",
+				"tera:windblast",
+				"tera:high",
+				"tera:windblastthree",
+				"tera:windash",
+				"origins:vegetarian",
+				"tera:netherite_bad",
+				"origins:claustrophobia"
+				
+	],
+	"unchoosable": true,
+	"icon": "minecraft:feather",
+	"impact": 3,
+        "order": 12,
+	"name": "Sunwing",
+	"description": "A warped version of it's previous self, the sunwing aerser is silent and lethal."
+}

@@ -1,15 +1,15 @@
 {
 	"powers": [
-				"origins:more_exhaustion",
-				"tera:shroomparticles",
-                "tera:boom",
-				"tera:blast_resistant",
 				"tera:effectimmunity",
                 "tera:healingspores",
                 "tera:poisonbomb",
 				"tera:photosynthesis",
 				"tera:poisontouch",
-				"tera:netherite_bad"
+				"tera:blast_resistant",
+				"tera:shroomparticles",
+                "tera:boom",
+				"tera:netherite_bad",
+				"origins:more_exhaustion"
 	],
 	"icon": "minecraft:red_mushroom_block",
 	"impact": 3,

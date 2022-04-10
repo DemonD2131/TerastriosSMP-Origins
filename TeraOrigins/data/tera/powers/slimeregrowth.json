@@ -9,7 +9,7 @@
 			{
 				"type": "origins:change_resource",
 				"resource": "tera:massbar",
-				"change": 15
+				"change": 1.6
 			},
 			{
 				"type": "origins:equipped_item_action",
@@ -27,7 +27,7 @@
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "minecraft:slime_block"
+				"item": "minecraft:slime_ball"
 			}
 		}
 	},
@@ -35,7 +35,7 @@
 		"key": "key.use",
 		"continuous": true
 	},
-	"cooldown": 20,
+	"cooldown": 5,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",

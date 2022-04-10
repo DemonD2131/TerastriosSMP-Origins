@@ -1,0 +1,53 @@
+{
+    "hidden": true,
+    "key": {
+      "key": "key.use",
+      "continuous": false
+    },
+    "type": "origins:active_self",
+    "cooldown": 2,
+    "hud_render": {
+      "should_render": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:slime_ball"
+            }
+          }
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:delay",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "clear @s slime_ball 0"
+          },
+          "ticks": 2
+        },
+        {
+          "type": "origins:delay",
+          "action": {
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 0
+          },
+          "ticks": 2
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:item.armor.equip_iron player @s ~ ~ ~ 1 1"
+        }
+      ]
+    }
+  }

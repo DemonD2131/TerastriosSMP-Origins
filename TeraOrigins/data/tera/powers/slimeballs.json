@@ -8,7 +8,7 @@
 			{
 				"type": "origins:change_resource",
 				"resource": "tera:massbar",
-				"change": -15
+				"change": -20
 			},
 			{
 				"type": "origins:give",

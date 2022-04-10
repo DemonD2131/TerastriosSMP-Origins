@@ -4,14 +4,15 @@
 		        "tera:gust",
 				"origins:slow_falling",
 				"origins:tailwind",
+				"tera:windblast",
+				"origins:like_air",
 				"origins:vegetarian",
+				"tera:high",
 				"origins:claustrophobia",
 				"tera:tripleshot",
-				"tera:windblast",
-				"tera:high",
 				"tera:windblasttwo",
-				"tera:windpooofs",
-				"tera:netherite_bad"
+				"tera:netherite_bad",
+				"tera:windpooofs"
 				
 	],
 	"icon": "minecraft:feather",

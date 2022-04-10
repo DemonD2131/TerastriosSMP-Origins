@@ -15,6 +15,7 @@
             }
           }
       },
+
 	"cooldown": 3500,
         "hud_render": {
        	 	"should_render": true,
