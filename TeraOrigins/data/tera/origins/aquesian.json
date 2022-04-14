@@ -1,6 +1,7 @@
 {
 	"powers": [
                 "origins:aqua_affinity",
+				"origins:water_breathing",
 		        "origins:aqua_affinity_underwater",
 				"origins:aqua_affinity_undergrounded",
                 "origins:swim_speed",
@@ -8,6 +9,7 @@
 				"origins:water_vision",
                 "tera:amphibious",
 				"tera:waterinvis",
+				"tera:respiration",
 				"tera:riptide",
 				"tera:evaporate",
                 "tera:freezing",
