@@ -1,6 +1,8 @@
 {
+    "type": "multiple",
+    "invisble":{
     "type": "origins:invisibility",
-    "render_armor": true,
+    "render_armor": false,
     "condition": {
         "type": "origins:sneaking"
     },
@@ -11,7 +13,21 @@
     		"duration": 20,
     		"amplifier": 0
     	}
-  	},
+  	}
+},
+"speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": 0.07633587785,
+        "name": "Increased crouching"
+    },
+    "tick_rate": 1,
+    "condition": {
+        "type": "origins:sneaking"
+    }
+},
     "name": "Camouflage",
     "description": "If you hold down the sneak key while on sand or porous mineral, you become completely invisible."
 }

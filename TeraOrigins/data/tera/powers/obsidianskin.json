@@ -4,7 +4,7 @@
 	"description": "Your tough obsidian skin gives you more protection, but it also makes you slower.",
 	"modifier": {
 		"attribute": "minecraft:generic.armor",
-		"value": 3,
+		"value": 2,
 		"operation": "addition"
 	}
 }

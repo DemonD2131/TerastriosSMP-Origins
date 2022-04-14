@@ -71,7 +71,7 @@
 		"interval": 20,
 		"entity_action": {
 			"type": "origins:damage",
-			"amount": 2,
+			"amount": 1,
 			"source": {
 				"name": "freeze"
 			}

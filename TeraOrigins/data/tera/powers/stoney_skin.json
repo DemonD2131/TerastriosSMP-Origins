@@ -1,14 +1,14 @@
 {
   "type": "origins:attribute",
   "name": "Tuff Exterior",
-  "description": "Because of your Tuff Armor you are tinted grey and have natural armor.",
+  "description": "Because of your Tuff Armor you are tinted grey.",
   "red": 0.45,
   "blue": 0.51,
   "green": 0.5,
   "modifier": {
     "name": "Natural Armor health bonus",
     "attribute": "minecraft:generic.armor",
-    "value": 2.0,
+    "value": 0.0,
     "operation": "addition"
   }
 }
