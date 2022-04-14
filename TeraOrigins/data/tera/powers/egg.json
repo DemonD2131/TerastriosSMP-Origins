@@ -7,7 +7,9 @@
         "min": 0,
         "max": 30,
         "hud_render": {
-            "should_render": false
+            "should_render": true,
+            "bar_index": 2,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png"
         }
     },
     "laying": {

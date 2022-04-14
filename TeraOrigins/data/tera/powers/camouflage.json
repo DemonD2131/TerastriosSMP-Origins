@@ -1,5 +1,5 @@
 {
-    "type": "multiple",
+    "type": "origins:multiple",
     "invisble":{
     "type": "origins:invisibility",
     "render_armor": false,
@@ -23,7 +23,7 @@
         "value": 0.07633587785,
         "name": "Increased crouching"
     },
-    "tick_rate": 1,
+    "tick_rate": 2,
     "condition": {
         "type": "origins:sneaking"
     }
