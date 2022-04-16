@@ -2,6 +2,7 @@
 	"powers": [
                 "origins:aqua_affinity",
 				"origins:water_breathing",
+				"tera:magnet",
 		        "origins:aqua_affinity_underwater",
 				"origins:aqua_affinity_undergrounded",
                 "origins:swim_speed",

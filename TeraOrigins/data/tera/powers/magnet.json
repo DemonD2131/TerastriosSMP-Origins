@@ -1,0 +1,19 @@
+{
+    "name": "Whirlpool",
+    "description": "Your pickup range in water is greatly increased. (Credit to Iljimae520)",
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action":
+    {
+        "type": "origins:execute_command",
+        "permission_level": 4,
+        "command": "tp @e[type=minecraft:item,distance=..4.85,nbt={PickupDelay:0s}] @s"
+    },
+	"condition":{
+	 "type": "origins:fluid_height",
+    "fluid": "minecraft:water",
+    "comparison": ">",
+    "compare_to": 0
+	},
+    "hidden": false
+}
