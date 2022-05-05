@@ -92,7 +92,7 @@
                 {
                     "type": "origins:block_collision",
                     "offset_x": 0,
-                    "offset_y": 0.119999,
+                    "offset_y": 0.11,
                     "offset_z": 0
                 },
                 {

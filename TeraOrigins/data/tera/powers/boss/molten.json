@@ -1,0 +1,37 @@
+{
+    "name": "Molten",
+    "description": "Natural armor, but in lava, gain extra damage",
+    "type": "origins:multiple",
+    "armor": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.armor",
+            "operation": "addition",
+            "value": 23
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">",
+            "compare_to": 0.0,
+            "inverted": true
+        }
+    },
+    "attack":{
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 8
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">",
+            "compare_to": 0.0,
+            "inverted": false
+        }
+    }
+}

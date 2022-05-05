@@ -1,0 +1,58 @@
+{
+    "name": "Dynns swap",
+    "description": "Swap to Mora",
+    "type": "origins:multiple",
+    "summon":{
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:{nbtdata:value,tag1:set}, Invisible:1b, Marker:1b, Tags: [\"mora\"]}",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @a[nbt={ cardinal_components:{  \"origins:origin\": {OriginLayers: [{Origin: \"tera:dynn\", Layer: \"origins:origin\"}]}}}] run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,NoAI:1b,Tags:{nbtdata:value,tag1:set}, Invisible:1b, Marker:1b, Tags: [\"dynn\"]}",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[tag=mora] run tp @a[nbt={ cardinal_components:{  \"origins:origin\": {OriginLayers: [{Origin: \"tera:dynn\", Layer: \"origins:origin\"}]}}}] @s",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[tag=dynn] run tp @a[nbt={ cardinal_components:{  \"origins:origin\": {OriginLayers: [{Origin: \"tera:mora\", Layer: \"origins:origin\"}]}}}] @s",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 5,
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [{
+                            "type": "origins:execute_command",
+                            "command": "kill @e[tag=dynn]",
+                            "permisssion_level": 4
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[tag=mora]",
+                            "permisssion_level": 4
+                        }
+                    ]
+                    }
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": false
+        },
+        "key":{
+            "key": "key.origins.primary_active"
+        }
+    }
+}

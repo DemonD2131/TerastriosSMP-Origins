@@ -1,0 +1,92 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "shieldbash":{
+        "type": "origins:action_over_time",
+        "rising_action":{
+            "type": "origins:and",
+            "actions":[
+                {
+                    "type": "origins:change_resource",
+                    "resource": "tera:boss/dependentscboss_resource",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "space": "local_horizontal",
+                    "z": -5,
+                    "y": 3
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 4,
+                    "source": {
+                        "name": "onFire",
+                        "fire": true,
+                        "bypasses_armor": true
+                    }
+                }
+            ]
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "tera:boss/dependentscboss_resource",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "slam":{
+        "type": "origins:action_over_time",
+        "rising_action":{
+            "type": "origins:and",
+            "actions":[
+                {
+                    "type": "origins:change_resource",
+                    "resource": "tera:boss/dependentscboss_resource",
+                    "change": 0,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "space": "local_horizontal",
+                    "y": 4
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 10,
+                    "action":{
+                        "type": "origins:add_velocity",
+                        "space": "local_horizontal",
+                        "y": -5
+                    }
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 4,
+                    "source": {
+                        "name": "onFire",
+                        "fire": true,
+                        "bypasses_armor": true
+                    }
+                }
+            ]
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "tera:boss/dependentscboss_resource",
+            "comparison": "==",
+            "compare_to": 2
+        }
+    }
+}

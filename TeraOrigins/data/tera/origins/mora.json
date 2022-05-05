@@ -1,0 +1,19 @@
+{
+	"powers": [
+        "tera:boss/molten",
+		"tera:boss/twin_swapm",
+		"tera:boss/fireball",
+		"tera:boss/slam",
+		"tera:boss/fireball",
+		"tera:boss/firetrail",
+		"origins:fire_immunity",
+		"tera:boss/no_boom",
+		"tera:slimefall"
+	],
+	"icon": "minecraft:end_crystal",
+	"impact": 3,
+    "order": 4,
+    "unchoosable": true,
+	"name": "Mora",
+	"description": "Go now chimmiera commit a crime"
+}

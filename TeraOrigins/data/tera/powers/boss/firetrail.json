@@ -1,0 +1,120 @@
+{
+    "name": "Firetrail",
+    "description": "My fucking pants are on fire",
+    "type": "origins:multiple",
+    "firetrail":{
+        "type": "origins:action_over_time",
+        "entity_action":{
+            "type": "origins:block_action_at",
+            "block_action": {
+                "type": "origins:explode",
+                "power": 1,
+                "destruction_type": "none",
+                "damage_self": false,
+                "create_fire": true
+            }
+        },
+        "interval": 4,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "tera:boss/firetrail_resource",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "toggle": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "tera:boss/firetrail_resource",
+                        "comparison": "==",
+                        "compare_to": 0
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "tera:boss/firetrail_resource",
+                        "change": 1,
+                        "operation": "set"
+                    },
+                    "else_action": {
+                        "type": "origins:change_resource",
+                        "resource": "tera:boss/firetrail_resource",
+                        "change": 0,
+                        "operation": "set"
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "tera:boss/firetrail_resource",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "title @s title [\"\",{\"text\":\"Toggled Fire Trail off\",\"color\":\"gold\",\"bold\":true}]",
+                        "permission_level": 4
+                    },
+                    "else_action": {
+                        "type": "origins:execute_command",
+                        "command": "title @s title [\"\",{\"text\":\"Toggled Fire Trail on\",\"color\":\"gold\",\"bold\":true}]",
+                        "permission_level": 4
+                    }
+                    
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:stick"
+                }
+            }
+        },
+        {
+            "type": "origins:sneaking"
+        }
+        ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"powers": [
+        "tera:boss/dependentscboss"
+	],
+	"icon": "minecraft:feather",
+	"impact": 3,
+        "order": 1,
+	"name": "Aerser",
+	"description": "A being lighter than air, their bones comprised of lightweight material not well-studied."
+}

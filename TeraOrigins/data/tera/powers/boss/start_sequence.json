@@ -6,7 +6,7 @@
         "type": "origins:if_else",
         "condition":{
             "type": "origins:resource",
-            "resource": "tera:start_boom_resource",
+            "resource": "tera:boss_start_boom_resource",
             "comparison": "==",
             "compare_to": 4
         },
@@ -15,7 +15,7 @@
             "actions": [
                 {
             "type": "origins:change_resource",
-            "resource": "tera:start_boom_resource",
+            "resource": "tera:boss_start_boom_resource",
             "change": 0,
             "operation": "set"
                 },
@@ -28,7 +28,7 @@
         },
         "else_action": {
             "type": "origins:change_resource",
-            "resource": "tera:start_boom_resource",
+            "resource": "tera:boss_start_boom_resource",
             "change": 1,
             "operation": "set"
         }

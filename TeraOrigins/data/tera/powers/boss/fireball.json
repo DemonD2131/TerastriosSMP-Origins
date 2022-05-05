@@ -1,0 +1,58 @@
+{
+    "name": "A regular fireball",
+    "description": "HAHAAAHAHAHHAH YOU FUCKED UP YOu'VE uTTeRlY DOOMED YOURSELF",
+    "type": "origins:multiple",
+    "fire":{
+        "type": "origins:active_self",
+        "entity_action":{
+            "type": "origins:raycast",
+            "distance": 60,
+            "entity": true,
+            "shape_type": "visual",
+            "fluid_handling": "any",
+            "bientity_action": {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                    "type": "origins:damage",
+                    "amount": 2,
+                    "source": {
+                        "name": "onFire",
+                        "fire": true,
+                        "bypasses_armor": true
+                    }
+                },
+                {
+                    "type": "origins:set_on_fire",
+                    "duration": 20
+                }
+                ]
+                }
+            },
+            "command_step": 1,
+            "command_along_ray": "function tera:fireballs",
+            "command_along_ray_only_on_hit": false
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "dampen": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "kill @e[type=fireball,distance=..100]",
+            "permission_level": 4
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:sneaking"
+        }
+    }
+}
